@@ -1,0 +1,201 @@
+html{
+font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+body{
+    min-height: 100vh;
+}
+
+section {
+display: grid;
+grid-template-columns: repeat(3, 1fr);
+grid-template-rows: repeat(7, 73px);
+gap: 1rem;
+max-width: 1200px;
+margin: 0 auto;
+padding: 100px;
+}
+
+section > * {
+background: lightgray;
+border-radius: 8px;
+}
+
+header {
+display: flex;
+justify-content: space-between;
+align-items: baseline;
+padding-left: 2rem;
+grid-column-start: 1;
+grid-column-end: 3;
+}
+
+header h1{
+    font-weight: 500;
+}
+
+main {
+grid-column-start: 1;
+grid-column-end: 3;
+grid-row-start: 2;
+grid-row-end: 8;
+background-image: url("./images/Rectangle\ 2.png");
+background-size: cover;
+background-position: center;
+background-repeat: no-repeat;
+}
+
+aside {
+grid-column: 3;
+grid-row-start: 1;
+grid-row-end: 8;
+}
+
+
+.video-sec {
+    position: relative;
+}
+
+.video-screen{
+    background-image: url(./images/Rectangle\ 19.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 10rem;
+    aspect-ratio: 1 / 1;
+    border-radius: 8px;
+    position: absolute;
+    top: 2rem;
+    left: 2rem;
+}
+
+.video-sec-name{
+    background-color: blue;
+    color: white;
+    padding: 0.5rem 0.5rem;
+    border-radius: 20px;
+    margin: 0.5rem auto 0;
+    text-align: center;
+    width: 5rem;
+    font-weight: 400;
+    font-size: 20px;
+}
+
+.video-nav{
+    max-width: 24rem;
+    background-color: lightgray;
+    border-radius: 5rem;
+    display: inline-flex;
+    gap: 2rem;
+    padding: 1rem;
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    transform: translate(-50%, 50%);
+
+}
+
+.video-nav-button{
+    display: block;
+    width: 3rem;
+    border-radius: 50%;
+    border:none;
+    cursor: pointer;
+    aspect-ratio: 1 / 1;
+}
+
+.video-nav-btn-blue{
+    background-color: lightblue;
+}
+
+
+.video-nav-btn-red{
+    background-color: red;
+}
+
+.chat{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 2rem;
+    gap: 2rem;
+}
+
+.chat-btns{
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+}
+
+.chat-box-btn{
+    flex-grow:1;
+    border-radius: 20rem;
+    border: none;
+    outline: none;
+    height: 3rem;
+    font-size: 24px;
+    font-weight: 400;
+}
+
+.chat-box-btn:hover{
+    transition: all .2s ease-in-out;
+}
+
+
+.chat-sec{
+    display: flex;
+    flex-direction: column-reverse;
+    gap: 1rem;
+    flex-grow: 1;
+}
+ .chat-box-msg{
+    background-color: green;
+    width: 80%;
+    height: 20%;
+    color: white;
+    
+    
+} 
+
+.chat-box-msg:nth-of-type(4n - 1) {
+background-color: blue;
+color: white;
+margin-left: auto;
+
+
+}
+.chat-box-msg div{
+    display: flex;
+    justify-content: space-between;
+}
+
+
+/* .chat-box-msg-name, .chat-box-msg-time{
+    display: inline-block;
+} */
+
+.send-chat{
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+}
+
+.chat-input{
+    flex-grow: 1;
+    border-radius: 0.5rem;
+    border: none;
+    height: 4rem;
+}
+
+.send-icon{
+    background-color: white;
+    border-radius: 20%;
+    border: none;
+}
+
+
+
+
+
+
+
+    
